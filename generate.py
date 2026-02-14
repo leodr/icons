@@ -34,7 +34,7 @@ def generate_new_image(prompt):
 
     input = {
         "prompt": prompt,
-        "prompt_upsampling": True,
+        "prompt_upsampling": False,
     }
 
     output = replicate.run("black-forest-labs/flux-1.1-pro", input=input)
